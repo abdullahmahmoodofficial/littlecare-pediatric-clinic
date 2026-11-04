@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book a Visit — LittleCare Pediatric Clinic</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header><nav><a class="logo" href="index.html">LittleCare</a><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="vaccinations.html">Vaccinations</a></li><li><a href="booking.html">Book a Visit</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
+<main>
+<h1>Book a Visit</h1>
+<img src="images/clinic.jpg" alt="LittleCare clinic">
+<p>Choose a visit type and tell us a little about your child. We will confirm your appointment by phone or email.</p>
+<form id="booking-form">
+<label>Parent or guardian name <input type="text" name="parent" required></label>
+<label>Child's name <input type="text" name="child" required></label>
+<label>Child's date of birth <input type="date" name="dob" required></label>
+<label>Visit type <select name="visit"><option>Well-child checkup</option><option>Vaccination</option><option>Feeding or nutrition</option><option>Sleep guidance</option><option>Other concern</option></select></label>
+<label>Preferred date <input type="date" name="date" required></label>
+<label>Notes <textarea name="notes"></textarea></label>
+<button type="submit">Request Appointment</button>
+<p id="booking-message"></p>
+</form>
+</main>
+<footer><p>LittleCare Pediatric Clinic</p></footer>
+<script src="js/script.js"></script>
+</body>
+</html>
