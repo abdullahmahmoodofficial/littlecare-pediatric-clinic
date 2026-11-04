@@ -3,23 +3,46 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Services — LittleCare Pediatric Clinic</title>
+<title>Services & Fees — LittleCare Pediatric Clinic Lahore</title>
+<meta name="description" content="LittleCare Lahore services and fees: newborn care, check-ups, vaccinations, growth and nutrition, development screening — clear prices in rupees.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header><nav><a class="logo" href="index.html">LittleCare</a><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="vaccinations.html">Vaccinations</a></li><li><a href="booking.html">Book a Visit</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
-<main>
-<h1>Our Services</h1>
-<div class="cards">
-<article><img src="images/newborn.jpg" alt="Newborn care"><h2>Newborn Care</h2><p>First visits, feeding support and early development checks.</p></article>
-<article><img src="images/checkup.jpg" alt="Well-child checkup"><h2>Well-Child Checkups</h2><p>Regular growth, vision, hearing and development screening.</p></article>
-<article><img src="images/feeding.jpg" alt="Feeding guidance"><h2>Feeding and Nutrition</h2><p>Breastfeeding, weaning and balanced eating for growing children.</p></article>
-<article><img src="images/sleep.jpg" alt="Sleep guidance"><h2>Sleep Guidance</h2><p>Healthy routines and support for common sleep challenges.</p></article>
-<article><img src="images/vaccination2.jpg" alt="Vaccination visit"><h2>Vaccinations</h2><p>See our <a href="vaccinations.html">vaccination schedule</a>.</p></article>
+<header class="header"><div class="container nav-in">
+<a href="index.html" class="logo"><span class="logo-mark">LC</span><span class="logo-text">Little<em>Care</em><small>PEDIATRIC CLINIC &middot; LAHORE</small></span></a>
+<nav class="nav" id="nav"><a href="index.html" class="">Home</a><a href="services.html" class="active">Services</a><a href="vaccinations.html" class="">Vaccinations</a><a href="booking.html" class="">Book a Visit</a><a href="about.html" class="">About</a><a href="contact.html" class="">Contact</a><a href="booking.html" class="btn btn-sm">Book a Visit</a></nav>
+<button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+</div></header>
+
+<section class="page-head"><div class="container"><h1>Services &amp; Fees</h1><p>Clear prices in rupees, before you book. Filter by your child's age.</p></div></section>
+<section class="sec"><div class="container">
+<div class="filters reveal" id="svcFilters">
+<button data-f="all" class="active">All ages</button><button data-f="baby">Newborn &amp; Baby (0&ndash;1)</button><button data-f="toddler">Toddler (1&ndash;3)</button><button data-f="child">Child (4&ndash;12)</button><button data-f="teen">Teen (13&ndash;18)</button>
 </div>
-<p><a class="button" href="booking.html">Book a Service</a></p>
-</main>
-<footer><p>LittleCare Pediatric Clinic</p></footer>
+<div class="grid svc-grid" id="svcGrid">
+<div class="svc-card reveal" data-age="baby"><img src="images/newborn.jpg" alt="Newborn check-up"><h3>Newborn Check-up</h3><p>First-week and first-month checks: weight, jaundice, feeding and cord care.</p><p class="price">Rs. 2,000 <span>per visit</span></p><a href="booking.html?service=Newborn+Check-up" class="btn btn-teal">Book</a></div>
+<div class="svc-card reveal" data-age="baby toddler child teen"><img src="images/checkup.jpg" alt="Child check-up"><h3>General Check-up &amp; Illness</h3><p>Fever, cough, cold, stomach upsets, rashes and ear pain — examined properly, treated simply.</p><p class="price">Rs. 1,500 <span>per visit</span></p><a href="booking.html?service=General+Check-up" class="btn btn-teal">Book</a></div>
+<div class="svc-card reveal" data-age="baby toddler child"><img src="images/vaccination.jpg" alt="Vaccination visit"><h3>Vaccination Visit</h3><p>All routine childhood vaccines, recorded on your child's card, with a free reminder for the next dose.</p><p class="price">Rs. 1,000 <span>+ vaccine cost</span></p><a href="vaccinations.html" class="btn btn-outline">See Schedule</a></div>
+<div class="svc-card reveal" data-age="baby toddler child"><img src="images/nutrition.jpg" alt="Children eating"><h3>Growth &amp; Nutrition</h3><p>Weight and height tracking, appetite problems, iron deficiency and a food plan for a Pakistani kitchen.</p><p class="price">Rs. 1,500 <span>per visit</span></p><a href="booking.html?service=Growth+%26+Nutrition" class="btn btn-teal">Book</a></div>
+<div class="svc-card reveal" data-age="toddler child"><img src="images/play.jpg" alt="Children playing"><h3>Development Screening</h3><p>Milestones, speech, hearing, learning and behaviour — checked gently, with honest guidance.</p><p class="price">Rs. 2,500 <span>per visit</span></p><a href="booking.html?service=Development+Screening" class="btn btn-teal">Book</a></div>
+<div class="svc-card reveal" data-age="baby toddler"><img src="images/feeding.jpg" alt="Baby feeding"><h3>Feeding &amp; Sleep Advice</h3><p>Breastfeeding support, weaning, bottle feeding and sleep routines that actually work.</p><p class="price">Rs. 2,000 <span>per visit</span></p><a href="booking.html?service=Feeding+%26+Sleep" class="btn btn-teal">Book</a></div>
+<div class="svc-card reveal" data-age="baby toddler child"><img src="images/sleep.jpg" alt="Baby resting"><h3>Nebulization &amp; Quick Care</h3><p>Nebulizer sessions for wheeze and breathing difficulty, with a plan for home care.</p><p class="price">Rs. 800 <span>per session</span></p><a href="booking.html?service=Nebulization" class="btn btn-teal">Book</a></div>
+<div class="svc-card reveal" data-age="child teen"><img src="images/clinic.jpg" alt="Clinic building"><h3>School Health Check</h3><p>Annual school-entry and sports-fitness checks, with a written report for the school.</p><p class="price">Rs. 1,200 <span>per visit</span></p><a href="booking.html?service=School+Health+Check" class="btn btn-teal">Book</a></div>
+</div>
+<p class="muted small reveal">Vaccine prices vary by brand and availability and are always confirmed before the visit — never a surprise bill.</p>
+</div></section>
+
+<footer class="footer"><div class="container foot-in">
+<div><a href="index.html" class="logo"><span class="logo-mark">LC</span><span class="logo-text">Little<em>Care</em><small>PEDIATRIC CLINIC &middot; LAHORE</small></span></a>
+<p>Gentle, unhurried children's healthcare in Johar Town, Lahore — from a baby's first check-up to school-age health.</p>
+<p class="muted small">Photos on this site are illustrative images of care settings, not portraits of individual team members.</p></div>
+<div><h4>Explore</h4><a href="services.html">Services &amp; Fees</a><a href="vaccinations.html">Vaccination Schedule</a><a href="booking.html">Book a Visit</a></div>
+<div><h4>Visit Us</h4><p>Main Boulevard, Johar Town,<br>Lahore, Pakistan<br>Mon&ndash;Sat: 9:00 AM &ndash; 9:00 PM<br>Sunday: 10:00 AM &ndash; 2:00 PM</p></div>
+<div><h4>Book</h4><p>Call / WhatsApp:<br><a href="https://wa.me/923001234567">+92 300 1234567</a></p><a href="booking.html" class="btn btn-teal">Book a Visit</a></div>
+</div><p class="foot-note">&copy; 2026 LittleCare Pediatric Clinic, Lahore. This is a demonstration website — visits are confirmed on WhatsApp.</p></footer>
 <script src="js/script.js"></script>
 </body>
 </html>

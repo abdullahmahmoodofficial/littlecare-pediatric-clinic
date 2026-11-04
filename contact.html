@@ -3,25 +3,51 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Contact — LittleCare Pediatric Clinic</title>
+<title>Contact — LittleCare Pediatric Clinic, Johar Town Lahore</title>
+<meta name="description" content="Contact LittleCare pediatric clinic, Johar Town Lahore: visit timings, WhatsApp booking and location.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header><nav><a class="logo" href="index.html">LittleCare</a><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="vaccinations.html">Vaccinations</a></li><li><a href="booking.html">Book a Visit</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
-<main>
-<h1>Contact Us</h1>
-<img src="images/clinic.jpg" alt="LittleCare clinic">
-<p>We would love to hear from you. Use the form below or visit us during clinic hours.</p>
-<form id="contact-form">
-<label>Name <input type="text" name="name" required></label>
-<label>Email <input type="email" name="email" required></label>
-<label>Message <textarea name="message" required></textarea></label>
-<button type="submit">Send Message</button>
-<p id="contact-message"></p>
+<header class="header"><div class="container nav-in">
+<a href="index.html" class="logo"><span class="logo-mark">LC</span><span class="logo-text">Little<em>Care</em><small>PEDIATRIC CLINIC &middot; LAHORE</small></span></a>
+<nav class="nav" id="nav"><a href="index.html" class="">Home</a><a href="services.html" class="">Services</a><a href="vaccinations.html" class="">Vaccinations</a><a href="booking.html" class="">Book a Visit</a><a href="about.html" class="">About</a><a href="contact.html" class="active">Contact</a><a href="booking.html" class="btn btn-sm">Book a Visit</a></nav>
+<button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+</div></header>
+
+<section class="page-head"><div class="container"><h1>Visit Us</h1><p>Johar Town, Lahore — walk in during clinic hours, or book first on WhatsApp.</p></div></section>
+<section class="sec"><div class="container two">
+<div class="reveal">
+<h2>Find the clinic</h2>
+<p><b>Address:</b> Main Boulevard, Johar Town, Lahore, Pakistan</p>
+<p><b>Hours:</b> Monday&ndash;Saturday, 9:00 AM &ndash; 9:00 PM; Sunday, 10:00 AM &ndash; 2:00 PM</p>
+<p><b>Call / WhatsApp:</b> <a href="https://wa.me/923001234567">+92 300 1234567</a></p>
+<p>Nearest landmark: Johar Town Main Boulevard — easy parking outside, and a small play corner inside for waiting children.</p>
+<a href="booking.html" class="btn btn-teal">Book a Visit &rarr;</a>
+</div>
+<div class="reveal"><img src="images/clinic.jpg" alt="Clinic building"></div>
+</div></section>
+<section class="sec sec-alt"><div class="container">
+<div class="sec-head reveal"><h2>Send a message</h2><p>Questions about a visit, a vaccine or a report? Write here — the form shows a confirmation instantly.</p></div>
+<form id="contactForm" class="contact-form reveal">
+<label>Your name <input type="text" required placeholder="Your name"></label>
+<label>WhatsApp number <input type="tel" required placeholder="03xx xxxxxxx"></label>
+<label>Message <textarea rows="4" required placeholder="My 8-month-old missed the 6-week vaccines…"></textarea></label>
+<button class="btn btn-teal" type="submit">Send Message</button>
+<p id="contactResult" class="muted"></p>
 </form>
-<p>Prefer to book directly? <a href="booking.html">Book a visit</a>.</p>
-</main>
-<footer><p>LittleCare Pediatric Clinic</p></footer>
+</div></section>
+
+<footer class="footer"><div class="container foot-in">
+<div><a href="index.html" class="logo"><span class="logo-mark">LC</span><span class="logo-text">Little<em>Care</em><small>PEDIATRIC CLINIC &middot; LAHORE</small></span></a>
+<p>Gentle, unhurried children's healthcare in Johar Town, Lahore — from a baby's first check-up to school-age health.</p>
+<p class="muted small">Photos on this site are illustrative images of care settings, not portraits of individual team members.</p></div>
+<div><h4>Explore</h4><a href="services.html">Services &amp; Fees</a><a href="vaccinations.html">Vaccination Schedule</a><a href="booking.html">Book a Visit</a></div>
+<div><h4>Visit Us</h4><p>Main Boulevard, Johar Town,<br>Lahore, Pakistan<br>Mon&ndash;Sat: 9:00 AM &ndash; 9:00 PM<br>Sunday: 10:00 AM &ndash; 2:00 PM</p></div>
+<div><h4>Book</h4><p>Call / WhatsApp:<br><a href="https://wa.me/923001234567">+92 300 1234567</a></p><a href="booking.html" class="btn btn-teal">Book a Visit</a></div>
+</div><p class="foot-note">&copy; 2026 LittleCare Pediatric Clinic, Lahore. This is a demonstration website — visits are confirmed on WhatsApp.</p></footer>
 <script src="js/script.js"></script>
 </body>
 </html>

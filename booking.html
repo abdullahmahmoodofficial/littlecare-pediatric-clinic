@@ -3,27 +3,62 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Book a Visit — LittleCare Pediatric Clinic</title>
+<title>Book a Visit — LittleCare Pediatric Clinic Lahore</title>
+<meta name="description" content="Book a children's clinic visit at LittleCare, Johar Town Lahore — pick a service, day and time, and confirm on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header><nav><a class="logo" href="index.html">LittleCare</a><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="vaccinations.html">Vaccinations</a></li><li><a href="booking.html">Book a Visit</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
-<main>
-<h1>Book a Visit</h1>
-<img src="images/clinic.jpg" alt="LittleCare clinic">
-<p>Choose a visit type and tell us a little about your child. We will confirm your appointment by phone or email.</p>
-<form id="booking-form">
-<label>Parent or guardian name <input type="text" name="parent" required></label>
-<label>Child's name <input type="text" name="child" required></label>
-<label>Child's date of birth <input type="date" name="dob" required></label>
-<label>Visit type <select name="visit"><option>Well-child checkup</option><option>Vaccination</option><option>Feeding or nutrition</option><option>Sleep guidance</option><option>Other concern</option></select></label>
-<label>Preferred date <input type="date" name="date" required></label>
-<label>Notes <textarea name="notes"></textarea></label>
-<button type="submit">Request Appointment</button>
-<p id="booking-message"></p>
+<header class="header"><div class="container nav-in">
+<a href="index.html" class="logo"><span class="logo-mark">LC</span><span class="logo-text">Little<em>Care</em><small>PEDIATRIC CLINIC &middot; LAHORE</small></span></a>
+<nav class="nav" id="nav"><a href="index.html" class="">Home</a><a href="services.html" class="">Services</a><a href="vaccinations.html" class="">Vaccinations</a><a href="booking.html" class="active">Book a Visit</a><a href="about.html" class="">About</a><a href="contact.html" class="">Contact</a><a href="booking.html" class="btn btn-sm">Book a Visit</a></nav>
+<button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+</div></header>
+
+<section class="page-head"><div class="container"><h1>Book a Visit</h1><p>One minute, and your child's visit is booked — confirmed on WhatsApp.</p></div></section>
+<section class="sec"><div class="container two">
+<form id="bookForm" class="book-form reveal">
+<label>Parent's name <input type="text" id="parentName" required placeholder="e.g. Ahmed Raza"></label>
+<label>Child's name <input type="text" id="childName" required placeholder="e.g. Fatima"></label>
+<label>Child's age <input type="text" id="childAge" required placeholder="e.g. 2 years / 5 months"></label>
+<label>Service
+<select id="service" required>
+<option value="">Choose a service…</option>
+<option>General Check-up</option><option>Newborn Check-up</option><option>Vaccination</option>
+<option>Growth &amp; Nutrition</option><option>Development Screening</option><option>Feeding &amp; Sleep</option>
+<option>Nebulization</option><option>School Health Check</option>
+</select></label>
+<label>Preferred day <input type="date" id="day" required></label>
+<label>Preferred time
+<select id="slot" required>
+<option value="">Choose a time…</option>
+<option>9:00 AM</option><option>10:30 AM</option><option>12:00 PM</option><option>4:00 PM</option><option>5:30 PM</option><option>7:00 PM</option>
+</select></label>
+<label>Language
+<select id="lang"><option>Urdu</option><option>English</option><option>Urdu &amp; English</option></select></label>
+<label>Anything we should know? <textarea id="notes" rows="3" placeholder="Fever since yesterday, vaccination card available…"></textarea></label>
+<button class="btn btn-teal" type="submit">Confirm on WhatsApp &rarr;</button>
+<p class="muted small">Your details stay in your own WhatsApp chat with the clinic. Nothing is stored on this demonstration site.</p>
 </form>
-</main>
-<footer><p>LittleCare Pediatric Clinic</p></footer>
+<div class="reveal">
+<div id="bookResult" class="book-result">
+<h3>How booking works</h3>
+<ol class="steps"><li><b>Fill the form</b> — service, day and time.</li><li><b>Get your reference</b> — like LC-482913, shown right here.</li><li><b>Confirm on WhatsApp</b> — one tap opens a pre-written message to the clinic.</li><li><b>Come with the card</b> — bring the vaccination card and any old reports.</li></ol>
+<img src="images/hero.jpg" alt="A smiling baby being examined">
+</div>
+</div>
+</div></section>
+
+<footer class="footer"><div class="container foot-in">
+<div><a href="index.html" class="logo"><span class="logo-mark">LC</span><span class="logo-text">Little<em>Care</em><small>PEDIATRIC CLINIC &middot; LAHORE</small></span></a>
+<p>Gentle, unhurried children's healthcare in Johar Town, Lahore — from a baby's first check-up to school-age health.</p>
+<p class="muted small">Photos on this site are illustrative images of care settings, not portraits of individual team members.</p></div>
+<div><h4>Explore</h4><a href="services.html">Services &amp; Fees</a><a href="vaccinations.html">Vaccination Schedule</a><a href="booking.html">Book a Visit</a></div>
+<div><h4>Visit Us</h4><p>Main Boulevard, Johar Town,<br>Lahore, Pakistan<br>Mon&ndash;Sat: 9:00 AM &ndash; 9:00 PM<br>Sunday: 10:00 AM &ndash; 2:00 PM</p></div>
+<div><h4>Book</h4><p>Call / WhatsApp:<br><a href="https://wa.me/923001234567">+92 300 1234567</a></p><a href="booking.html" class="btn btn-teal">Book a Visit</a></div>
+</div><p class="foot-note">&copy; 2026 LittleCare Pediatric Clinic, Lahore. This is a demonstration website — visits are confirmed on WhatsApp.</p></footer>
 <script src="js/script.js"></script>
 </body>
 </html>

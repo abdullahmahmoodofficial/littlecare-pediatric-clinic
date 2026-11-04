@@ -3,21 +3,59 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Vaccinations — LittleCare Pediatric Clinic</title>
+<title>Vaccination Schedule & Reminders — LittleCare Pediatric Clinic Lahore</title>
+<meta name="description" content="LittleCare Lahore vaccination schedule: check which vaccines your child is due for by birth date, and get free WhatsApp reminders before every dose.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-<header><nav><a class="logo" href="index.html">LittleCare</a><ul><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="services.html">Services</a></li><li><a href="vaccinations.html">Vaccinations</a></li><li><a href="booking.html">Book a Visit</a></li><li><a href="contact.html">Contact</a></li></ul></nav></header>
-<main>
-<h1>Vaccinations</h1>
-<img src="images/vaccination.jpg" alt="Vaccination visit">
-<p>Immunizations protect children from serious illness. We follow the recommended schedule and keep a record for every child.</p>
-<table><tr><th>Age</th><th>Common vaccinations</th></tr><tr><td>Birth</td><td>Hepatitis B</td></tr><tr><td>2, 4 and 6 months</td><td>DTaP, polio, Hib, pneumococcal and rotavirus</td></tr><tr><td>12–18 months</td><td>MMR, varicella, hepatitis A and boosters</td></tr><tr><td>4–6 years</td><td>DTaP, polio, MMR and varicella boosters</td></tr></table>
-<p>Your doctor will confirm the schedule for your child at each visit.</p>
-<img src="images/vaccination2.jpg" alt="Child after vaccination">
-<p><a class="button" href="booking.html">Book a Vaccination</a></p>
-</main>
-<footer><p>LittleCare Pediatric Clinic</p></footer>
+<header class="header"><div class="container nav-in">
+<a href="index.html" class="logo"><span class="logo-mark">LC</span><span class="logo-text">Little<em>Care</em><small>PEDIATRIC CLINIC &middot; LAHORE</small></span></a>
+<nav class="nav" id="nav"><a href="index.html" class="">Home</a><a href="services.html" class="">Services</a><a href="vaccinations.html" class="active">Vaccinations</a><a href="booking.html" class="">Book a Visit</a><a href="about.html" class="">About</a><a href="contact.html" class="">Contact</a><a href="booking.html" class="btn btn-sm">Book a Visit</a></nav>
+<button class="hamburger" id="hamburger" aria-label="Open menu"><span></span><span></span><span></span></button>
+</div></header>
+
+<section class="page-head"><div class="container"><h1>Vaccinations &amp; Reminders</h1><p>Enter your child's birth date to see which vaccines are due next — and never miss a dose again.</p></div></section>
+<section class="sec"><div class="container two">
+<div class="reveal">
+<h2>Which vaccines is my child due for?</h2>
+<p>Pick your child's birth date. The checker shows the next due vaccines from Pakistan's routine childhood schedule.</p>
+<form id="vaxForm" class="vax-form">
+<label>Child's date of birth
+<input type="date" id="dob" required></label>
+<button class="btn btn-teal" type="submit">Check Due Vaccines</button>
+</form>
+<div id="vaxResult" class="vax-result"></div>
+<p class="muted small">This is a general guide based on Pakistan's routine EPI schedule. Your doctor confirms the exact plan at the visit, especially if any dose was delayed.</p>
+</div>
+<div class="reveal"><img src="images/vaccination2.jpg" alt="A child receiving a vaccination"></div>
+</div></section>
+<section class="sec sec-alt"><div class="container">
+<div class="sec-head reveal"><h2>Routine childhood schedule</h2><p>The ages below follow Pakistan's routine immunization schedule. Bring the vaccination card to every visit.</p></div>
+<div class="table-wrap reveal"><table class="tbl">
+<tr><th>Age</th><th>Vaccines</th><th>Protects against</th></tr>
+<tr><td>At birth</td><td>BCG, OPV-0</td><td>Tuberculosis, polio</td></tr>
+<tr><td>6 weeks</td><td>OPV-1, Pentavalent-1, PCV-1, Rotavirus-1</td><td>Polio, diphtheria, tetanus, hepatitis B, pneumonia, diarrhoea</td></tr>
+<tr><td>10 weeks</td><td>OPV-2, Pentavalent-2, PCV-2, Rotavirus-2</td><td>Second doses of the same</td></tr>
+<tr><td>14 weeks</td><td>OPV-3, Pentavalent-3, PCV-3, Rotavirus-3</td><td>Third doses of the same</td></tr>
+<tr><td>9 months</td><td>Measles-1, Typhoid (TCV)</td><td>Measles, typhoid</td></tr>
+<tr><td>15 months</td><td>Measles-2</td><td>Measles (second dose)</td></tr>
+<tr><td>4&ndash;5 years</td><td>DTaP / Td booster, OPV booster</td><td>Diphtheria, tetanus, polio boosters</td></tr>
+</table></div>
+<p class="muted small">If a dose was missed, it is usually not too late — book a visit and the clinic will make a catch-up plan.</p>
+<div class="cta reveal"><h3>Want a reminder before every dose?</h3><p>Book any vaccination visit and we remind you on WhatsApp before the next due date — free, always.</p><a href="booking.html?service=Vaccination" class="btn btn-teal">Book a Vaccination Visit</a></div>
+</div></section>
+
+<footer class="footer"><div class="container foot-in">
+<div><a href="index.html" class="logo"><span class="logo-mark">LC</span><span class="logo-text">Little<em>Care</em><small>PEDIATRIC CLINIC &middot; LAHORE</small></span></a>
+<p>Gentle, unhurried children's healthcare in Johar Town, Lahore — from a baby's first check-up to school-age health.</p>
+<p class="muted small">Photos on this site are illustrative images of care settings, not portraits of individual team members.</p></div>
+<div><h4>Explore</h4><a href="services.html">Services &amp; Fees</a><a href="vaccinations.html">Vaccination Schedule</a><a href="booking.html">Book a Visit</a></div>
+<div><h4>Visit Us</h4><p>Main Boulevard, Johar Town,<br>Lahore, Pakistan<br>Mon&ndash;Sat: 9:00 AM &ndash; 9:00 PM<br>Sunday: 10:00 AM &ndash; 2:00 PM</p></div>
+<div><h4>Book</h4><p>Call / WhatsApp:<br><a href="https://wa.me/923001234567">+92 300 1234567</a></p><a href="booking.html" class="btn btn-teal">Book a Visit</a></div>
+</div><p class="foot-note">&copy; 2026 LittleCare Pediatric Clinic, Lahore. This is a demonstration website — visits are confirmed on WhatsApp.</p></footer>
 <script src="js/script.js"></script>
 </body>
 </html>
